@@ -1,0 +1,10 @@
+class Solution(object):
+    def twoSum(self, nums, target):
+
+        for i in nums:
+            find=target-i
+            for j in nums:
+                if j==find:
+                    first=nums.index(i)
+                    second=nums.index(j)
+                    return(first,second)
